@@ -11,19 +11,19 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import ru.realityfamily.synergybakery.Adapters.MenuAdapter;
-import ru.realityfamily.synergybakery.Models.Product;
+import ru.realityfamily.synergybakery.Adapters.SalesAdapter;
+import ru.realityfamily.synergybakery.Models.Sale;
 import ru.realityfamily.synergybakery.R;
 
-public class MenuFragment extends Fragment {
+public class SalesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.menu_fragment, container, false);
+        View v = inflater.inflate(R.layout.sales_fragment, container, false);
 
-        RecyclerView rv = (RecyclerView) v.findViewById(R.id.menu_RecyclerView);
+        RecyclerView rv = v.findViewById(R.id.sale_RecyclerView);
         rv.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        rv.setAdapter(new MenuAdapter(this.getContext(), Product.GetMenu()));
+        rv.setAdapter(new SalesAdapter(Sale.GetSales()));
 
         return v;
     }

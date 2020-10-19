@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/middle_margin">
+    <RelativeLayout
+        android:id="@+id/ClientInfo_Container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+        <ru.realityfamily.synergybakery.Components.MyImageView
+            android:id="@+id/ClientImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/client_image"/>
+        <TextView
+            android:id="@+id/ClientName"
+            android:textColor="@color/TextColor"
+            android:text="@string/client_name"
+            android:textSize="@dimen/ClientName"
+            android:gravity="center"
+
+            android:layout_toEndOf="@id/ClientImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clientRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ClientInfo_Container"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/middle_margin"/>
+</RelativeLayout>

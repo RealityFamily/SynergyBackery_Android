@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_margin"
+        android:textSize="@dimen/categoryTitle"
+        android:textColor="@color/TextColor"
+        android:textAlignment="center"
+        tools:text="Название категории"
+        android:layout_alignParentTop="true"/>
+
+    <ru.realityfamily.synergybakery.Components.MyGridView
+        android:id="@+id/gridContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/middle_margin"
+        android:layout_marginEnd="@dimen/middle_margin"
+        app:layout_constraintTop_toBottomOf="@id/categoryTitle"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/middle_margin"
+        android:horizontalSpacing="@dimen/middle_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/categoryTitle"/>
+</RelativeLayout>

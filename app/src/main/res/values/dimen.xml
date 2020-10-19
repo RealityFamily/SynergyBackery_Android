@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="TitleSize">20sp</dimen>
+    <dimen name="categoryTitle">20sp</dimen>
+    <dimen name="ProductInfo">16.5sp</dimen>
+    <dimen name="ProductSize">13sp</dimen>
+    <dimen name="SaleName">20sp</dimen>
+    <dimen name="SaleCondition">15sp</dimen>
+    <dimen name="ClientName">28sp</dimen>
+    <dimen name="ClientSettings">20sp</dimen>
     <dimen name="icon_size">24dp</dimen>
     <dimen name="middle_margin">15dp</dimen>
+    <dimen name="half_middle_margin">7.5dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
 </resources>
