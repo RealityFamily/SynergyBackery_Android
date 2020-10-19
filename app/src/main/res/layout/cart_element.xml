@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:backgroundTint="@color/colorSecondaryLight"
+    app:cardCornerRadius="@dimen/small_margin"
+    android:layout_marginStart="@dimen/middle_margin"
+    android:layout_marginEnd="@dimen/middle_margin"
+    android:layout_marginTop="@dimen/middle_margin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/small_margin">
+        <ru.realityfamily.synergybakery.Components.MyImageView
+            android:id="@+id/cart_element_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/middle_margin"
+            android:layout_marginEnd="@dimen/middle_margin"
+
+            android:layout_toEndOf="@id/cart_element_Image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/cart_element_price">
+            <TextView
+                android:id="@+id/cart_element_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/TitleSize"
+                android:textColor="@color/TextColor"
+                android:gravity="center_vertical"
+                tools:text="vfds"/>
+            <TextView
+                android:id="@+id/cart_element_size"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/ProductSize"
+                android:textColor="@color/AditTextColor"
+                android:gravity="center_vertical"
+                tools:text="bhgfsd"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cart_element_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/middle_margin"
+
+            android:textColor="@color/TextColor"
+            android:textSize="@dimen/TitleSize"
+            android:gravity="center_vertical"
+            tools:text="50 руб."
+
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

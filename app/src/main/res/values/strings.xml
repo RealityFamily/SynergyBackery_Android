@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SynergyBakery</string>
+    <string name="navigation_page_menu">Меню</string>
+    <string name="navigation_page_sales">Акции</string>
+    <string name="navigation_page_client">Личный кабинет</string>
+    <string name="app_sale_only">Доступно только при покупке через приложение</string>
+    <string name="client_name">Шешуков Леонид Сергеевич</string>
+    <string name="make_order">Оформить заказ</string>
+</resources>
